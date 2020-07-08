@@ -412,3 +412,8 @@ label.checkbox:active:after {
   padding: .75rem .7rem;
   border-radius: 50%;
 }
+
+
+input#file-upload-button {
+  background: var(--color-orange) !important;
+}

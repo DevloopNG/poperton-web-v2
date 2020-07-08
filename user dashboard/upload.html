@@ -1,9 +1,9 @@
-<!DOCTYPE h23ztml>
-<html lang="en" data-theme="light">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Properton || Listings Page</title>
+    <title>Properton || Upload Property Page</title>
 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -71,8 +71,8 @@
                 </div>
             </div>
         </nav>
-
-        <div class="p-4 p-md-5 pt-5" id="content">
+    
+        <div id="content" class="p-4 p-md-5 pt-5">
             <div class="row mt-5">
                 <div class="col-sm-4 col-md-4 col-lg-2 mt-4">
                     <a href="index.html">
@@ -82,7 +82,7 @@
                         </div>
                     </a>
                 </div>
-            
+    
                 <div class="col-sm-4 col-md-4 col-lg-2 mt-4">
                     <a href="c-funding.html">
                         <div class="link-card d-flex flex-column align-items-center">
@@ -91,7 +91,7 @@
                         </div>
                     </a>
                 </div>
-            
+    
                 <div class="col-sm-4 col-md-4 col-lg-2 mt-4">
                     <a href="c-own.html">
                         <div class="link-card d-flex flex-column align-items-center">
@@ -100,7 +100,7 @@
                         </div>
                     </a>
                 </div>
-            
+    
                 <div class="col-sm-4 col-md-4 col-lg-2 mt-4">
                     <a href="listings.html">
                         <div class="link-card d-flex flex-column align-items-center">
@@ -109,7 +109,7 @@
                         </div>
                     </a>
                 </div>
-            
+    
                 <div class="col-sm-4 col-md-4 col-lg-2 mt-4">
                     <a href="document.html">
                         <div class="link-card d-flex flex-column align-items-center">
@@ -118,7 +118,7 @@
                         </div>
                     </a>
                 </div>
-            
+    
                 <div class="col-sm-4 col-md-4 col-lg-2 mt-4">
                     <a href="manage.html">
                         <div class="link-card d-flex flex-column align-items-center">
@@ -127,67 +127,83 @@
                         </div>
                     </a>
                 </div>
-            
-            
             </div>
-            
-                <!--Listing Content-->
-                <div class="listings-div">
-                    <div class="col-title big">recent listings</div>
+    
+            <div class="upload mt-4">
+                <div class="text-center">
+                    <h2 class="text-orange text-uppercase"> Upload Property </h2>
+                </div>
+                <div class="site-section mt-4" id="contact-section">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-7">                
+                                <form method="post" data-aos="fade">
+                                    <div class="form-group row">
+                                        <div class="col-md-12">
+                                           <select class="form-control">
+                                               <option value="1" selected disabled>Select Investment type</option>
+                                               <option value="2">Crowd-funding</option>
+                                               <option value="3">Co-owning</option>
+                                           </select>
+                                        </div>
+                                    </div>
 
-                    <ul class="listings-list">
-                        <li class="mt-4">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <img src="images/banner1.jpg" alt="image house" class="col-12">
-                                </div>
-                                <div class="col-lg-6">
-                                    <h3>Lorem ipsum dolor sit amet.</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Eum velit odit ad animi laudantium sint mollitia quae error? Sint magnam eligendi illum alias maiores impedit.
-                                    </p>
-                                    <p>Lorem ipsum dolor sit amet ad animi laudantium sint mollitia quae error? Sint magnam eligendi illum consectetur adipisicing elit.
-                                        Eum velit odit ad animi laudantium sint mollitia quae error? Sint magnam eligendi illum alias maiores impedit.
-                                    </p>
-                                </div>
-                                <div class="col-lg-2 verify-true">
-                                    <h3>verified</h3>
-                                </div>
-                            </div>
-                        </li>
+                                    <div class="form-group row">
+                                        <div class="col-md-12">
+                                            <label style="color: red">*Upload all Documents in scanned copies</label>
+                                            <input type="file" class="form-control" multiple>
+                                        </div>
+                                    </div>
 
-                        <li class="mt-4">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <img src="images/banner1.jpg" alt="image house" class="col-12">
-                                </div>
-                                <div class="col-lg-6">
-                                    <h3>Lorem ipsum dolor sit amet.</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Eum velit odit ad animi laudantium sint mollitia quae error? Sint magnam eligendi illum alias maiores
-                                        impedit.
-                                    </p>
-                                    <p>Lorem ipsum dolor sit amet ad animi laudantium sint mollitia quae error? Sint magnam eligendi illum
-                                        consectetur adipisicing elit.
-                                        Eum velit odit ad animi laudantium sint mollitia quae error? Sint magnam eligendi illum alias maiores
-                                        impedit.
-                                    </p>
-                                </div>
-                                <div class="col-lg-2 verify-false">
-                                    <h3>pending</h3>
-                                </div>
+                                    <div class="form-group row">
+                                        <div class="col-md-12">
+                                            <input type="email" class="form-control" placeholder="Location of Property">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-md-12">
+                                            <textarea placeholder="Description of Property" class="form-control" style="resize: none; height: 120px"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-md-12">
+                                            <select class="form-control">
+                                                <option value="1" selected disabled>Select Building type</option>
+                                                <option value="2">Hostels</option>
+                                                <option value="3">Hotels</option>
+                                                <option value="4">Car parks</option>
+                                                <option value="5">Building</option>
+                                                <option value="6">Others</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                
+                                    <div class="form-group row">
+                                        <div class="col-md-12">
+                                            <input type="text" class="form-control" placeholder="Closest Boundaries to Location">
+                                        </div>
+                                    </div>
+                
+                                    <div class="form-group row">
+                                        <div class="col-md-6">
+                                            <input type="submit" class="btn-1" value="Submit">
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
     <footer>
-        <p style="text-align: center">Properton 2020 &copy; V_2.0</p>
+        <p>Properton 2020 &copy; V_2.0</p>
     </footer>
-
-
+    
     <script src="js/popper.min.js"></script>
     <script src="js/datatables.min.js"></script>
     <script src="js/jquery.jqplot.js"></script>
